@@ -1,0 +1,60 @@
+td {
+	/*width: 50px;
+	height: 50px;*/
+	border: 1px solid #000;
+	padding: 0;
+	font-size: 10px;
+	text-align: center;
+	background-color: #FFF;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+/*.bomb {
+	background-color: black; 
+}*/
+
+.checked {
+	background-color: #CCC;
+}
+
+.detected:after {
+	content: '⚑';
+	color: red;
+	font-size: 10px;
+}
+.loser .bomb {  /* Bierzemy cos co ma klase .bomb i w momecie gdy  ma/nabywa rodzica !! ( nie on sam)  z klasa .loser  wtedy dopiero nadajemy elementowi wlasciwosci tu nizej opisane*/
+	background-color: red; 
+}
+#game {
+	/*display: inline-block;*/
+	float: left;
+}
+#control {
+	/*display: inline-block;*/
+	float: left;
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	margin-left: 10px;
+	padding-left: 4px;
+}
+.clock {
+	height: 20px;
+	color:black;
+	margin-top: 10px;
+}
+.button {
+	height: 20px;
+	width: 50px;
+	border: solid black 2px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.input{
+	width: 50px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
