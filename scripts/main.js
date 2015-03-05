@@ -22,7 +22,7 @@ game.appendChild(table);								//add table as a child of game
 			//td.onclick = saper.count;
 			td.oncontextmenu = function(event){ 
 				event.preventDefault();
-				if (event.which === 3 && gameState === 1){
+				if (event.which === 3 && gameState === 1 && !event.target.classList.contains('checked')){
 					if (event.target.classList.contains('detected')){
 						saper.unflag(event.target);
 					}
